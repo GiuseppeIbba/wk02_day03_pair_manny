@@ -22,16 +22,11 @@ def test_has_wallet()
   assert_equal(100, @customer.wallet())
 end
 
-
-
-# def test_can_spend_money()
-#   @customer.wallet - @drink1.price
-#   assert_equal(90, @customer.wallet())
-# end
-# #
 def test_can_spend_money
   @customer.buy_drink(@drink3)
   assert_equal(70, @customer.wallet())
 end
+
+
 
 end
