@@ -10,6 +10,9 @@ class Customer
 
   end
 
+  def money_count()
+   @wallet
+  end
 
 
 end

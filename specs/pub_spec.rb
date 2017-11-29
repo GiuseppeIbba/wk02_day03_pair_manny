@@ -8,8 +8,8 @@ class TestPub < MiniTest::Test
 
   def setup
     @drink3 = Drink.new("Wine", 30)
-    @drink2 = Drink.new("Whisky", 40)
-    @drink1 = Drink.new("Vodka", 50)
+    @drink2 = Drink.new("Whisky", 20)
+    @drink1 = Drink.new("Vodka", 10)
     till = 1000
     @pub = Pub.new("The iron curtain", till, [@drink1, @drink2, @drink3])
   end
