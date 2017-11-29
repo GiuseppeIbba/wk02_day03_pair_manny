@@ -10,4 +10,9 @@ class Customer
 
   end
 
+  def customer_name()
+    return name
+  end
+
+
 end
