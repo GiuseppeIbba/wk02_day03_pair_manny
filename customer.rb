@@ -10,9 +10,7 @@ class Customer
 
   end
 
-  def money_count()
-   @wallet
+  def buy_drink(drink)
+    @wallet -= drink.price
   end
-
-
 end
