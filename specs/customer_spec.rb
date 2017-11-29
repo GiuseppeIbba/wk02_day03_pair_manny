@@ -10,11 +10,16 @@ class TestCustomer < MiniTest::Test
   end
 
 def test_name()
-  assert_equal("Dave", @customer.name)
+  assert_equal("Dave", @customer.name())
 end
 
-def test_wallet_amount
-  assert_equal(100, @customer.wallet)
+def test_wallet
+  assert_equal(100, @customer.wallet())
 end
+# 
+# def test_can_spend_money
+#   @customer.pay(30)
+#   assert_equal(70, @customer.wallet())
+# end
 
 end
